@@ -120,7 +120,7 @@ static const int GRID_COLUMNS = 10;
             // row on top, current row and row below
             for (int x = (i-1); x <= (i+1); x++) {
                 // column to left, current column, column to right
-                for (int y = (j-1); y <= (j+1); j++) {
+                for (int y = (j-1); y <= (j+1); y++) {
                     // check that the cell isnt off the screen
                     BOOL isIndexValid;
                     isIndexValid = [self isIndexValidForX:x andY:y];
