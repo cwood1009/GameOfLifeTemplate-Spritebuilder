@@ -38,6 +38,7 @@
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
 		CFAF085F1B54BD6300923CD8 /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAF085E1B54BD6300923CD8 /* Grid.m */; };
 		CFAF08621B54BDC400923CD8 /* Creature.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAF08611B54BDC400923CD8 /* Creature.m */; };
+		CFAF08641B54C27100923CD8 /* GameOfLifeAssets in Resources */ = {isa = PBXBuildFile; fileRef = CFAF08631B54C27100923CD8 /* GameOfLifeAssets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		CFAF085E1B54BD6300923CD8 /* Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Grid.m; path = Source/Grid.m; sourceTree = "<group>"; };
 		CFAF08601B54BDC400923CD8 /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Creature.h; path = Source/Creature.h; sourceTree = "<group>"; };
 		CFAF08611B54BDC400923CD8 /* Creature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Creature.m; path = Source/Creature.m; sourceTree = "<group>"; };
+		CFAF08631B54C27100923CD8 /* GameOfLifeAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GameOfLifeAssets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				B77F1CCF17B978D8009739AE /* Supporting Files */,
 				B77F1B3017B978D7009739AE /* Frameworks */,
 				B77F1B2F17B978D7009739AE /* Products */,
+				CFAF08631B54C27100923CD8 /* GameOfLifeAssets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -340,6 +343,7 @@
 			files = (
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
+				CFAF08641B54C27100923CD8 /* GameOfLifeAssets in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
