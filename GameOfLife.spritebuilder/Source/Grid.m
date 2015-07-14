@@ -55,8 +55,6 @@ static const int GRID_COLUMNS = 10;
             // shorthand to access an array inside an array
             _gridArray[i][j] = creature;
             
-            // make creature visible to test method
-            creature.isAlive = YES;
             
             x += _cellWidth;
             
@@ -65,6 +63,32 @@ static const int GRID_COLUMNS = 10;
         y += _cellHeight;
         
     }
+    
+}
+
+- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    // get the x,y coordinates of the touch
+    CGPoint touchLocation = [touch locationInNode:self];
+    
+    // get the creature at that location
+    Creature *creature = [self creatureForTouchPosition:touchLocation];
+    
+    //invert its state
+    creature.isAlive = !creature.isAlive;
+    
+}
+
+- (Creature *)creatureForTouchPosition:(CGPoint)touchPosition {
+    
+    int row;
+    int column;
+    
+    // get the row and column that was touched
+    row = touchPosition.y / _cellHeight;
+    column = touchPosition.x / _cellWidth;
+    
+    return _gridArray[row][column];
+    
     
 }
 
